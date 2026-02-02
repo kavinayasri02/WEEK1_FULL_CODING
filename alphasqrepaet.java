@@ -1,0 +1,13 @@
+public class alphasqrepaet {
+    public static void main(String[] args) {
+        int n = 5;
+        char ch='A';
+        for(int row =1;row<=n;row++){
+for(int col = 1;col<=n;col++){
+    System.out.print(ch+" ");
+}
+ch++;
+System.out.println();
+        }
+    }
+}
