@@ -1,3 +1,5 @@
+//Using the For loop
+
 import java.util.*;
 public class RemoveDupChars {
     public static void main(String[] args) {
@@ -21,5 +23,27 @@ public class RemoveDupChars {
            }
         }
       
+    }
+}
+
+//Using LinkedHashSet and StringBuilder
+
+import java.util.*;
+public class RemoveDupchars {
+    public static String removeDup(String s){
+        if( s == null || s.isEmpty()){
+            return s;
+        }
+        LinkedHashSet<Character> set = new LinkedHashSet<>();
+        StringBuilder sb = new StringBuilder();
+        for(char ch : s.toCharArray()){
+            if(set.add(ch)){
+                sb.append(ch);
+            }
+        }return sb.toString();
+    }public static void main(String[] args) {
+        Scanner kavi = new Scanner(System.in);
+        String k = kavi.nextLine();
+        System.out.println(removeDup(k));
     }
 }
