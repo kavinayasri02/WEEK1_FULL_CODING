@@ -25,3 +25,7 @@ public class SecondLargestElem {
         }
     }
 }
+
+
+output : 5 6 4 8 9 
+    8
